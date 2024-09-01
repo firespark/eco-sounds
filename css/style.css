@@ -1,0 +1,157 @@
+:root {
+    --brown: #e8c676;
+}
+
+
+body {
+    margin: 0;
+    background-color: #000000;
+}
+
+header {
+    background: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo .logo-text {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.logo:hover .logo-text {
+    color: var(--brown);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-menu li.active,
+.nav-menu li:hover {
+    color: var(--brown);
+}
+
+.main-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 139px);
+    background-image: url('../img/main.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.background-fadeIn {
+    animation: fadeIn 0.25s;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.control-play {
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: linear 0.05s;
+}
+
+.control-play:hover {
+    width: 75px;
+    height: 75px;
+}
+
+.control-play.play {
+    background-image: url('../img/play.svg');
+}
+
+.control-play.pause {
+    background-image: url('../img/pause.svg');
+}
+
+footer {
+    background: #000000;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.footer-block {
+    width: 33.3333%;
+    text-align: center;
+}
+
+.footer-block:last-child {
+    display: flex;
+    justify-content: end;
+}
+
+a.footer-github {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.footer-github:hover {
+    color: var(--brown);
+    text-decoration: underline;
+}
+
+a.footer-github img {
+    width: 50px;
+}
+
+a.footer-github span {
+    margin-left: 20px;
+}
+
+a.footer-rss img {
+    width: 100px;
+}
