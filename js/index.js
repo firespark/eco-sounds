@@ -1,5 +1,6 @@
 const mainScreen = document.querySelector('.main-screen');
 const playBtn = document.querySelector('.control-play');
+const nextBtn = document.querySelector('.control-next');
 const menuLinks = document.querySelectorAll('.nav-link');
 
 const audio = new Audio();
